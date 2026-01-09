@@ -4,154 +4,216 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Omar Ahmed Mostafa | Data Engineer Portfolio</title>
+
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap');
-        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #030712; color: white; scroll-behavior: smooth; }
-        .glass-nav { background: rgba(3, 7, 18, 0.8); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255,255,255,0.05); }
-        .card-gradient { background: linear-gradient(145deg, rgba(30, 41, 59, 0.4) 0%, rgba(15, 23, 42, 0.8) 100%); border: 1px solid rgba(255,255,255,0.05); }
-        .text-purple-glow { color: #a78bfa; text-shadow: 0 0 15px rgba(167, 139, 250, 0.3); }
-        .hero-blob { position: absolute; width: 500px; height: 500px; background: radial-gradient(circle, rgba(139, 92, 246, 0.15) 0%, transparent 70%); z-index: -1; }
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #030712;
+            color: white;
+            scroll-behavior: smooth;
+        }
+        .glass-nav {
+            background: rgba(3, 7, 18, 0.8);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+        .card-gradient {
+            background: linear-gradient(145deg, rgba(30, 41, 59, 0.4) 0%, rgba(15, 23, 42, 0.8) 100%);
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+        .hero-blob {
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(139, 92, 246, 0.15) 0%, transparent 70%);
+            z-index: -1;
+        }
     </style>
 </head>
+
 <body>
 
-    <nav class="fixed w-full z-50 glass-nav px-6">
-        <div class="max-w-7xl mx-auto flex justify-between items-center py-4">
-            <div class="text-xl font-extrabold tracking-widest text-white">OMAR<span class="text-purple-500">.</span>DE</div>
-            
-            <div class="flex items-center space-x-6">
-                <a href="https://github.com/Opop1omar4645545" target="_blank" title="GitHub" class="text-gray-400 hover:text-white transition text-xl"><i class="fab fa-github"></i></a>
-                <a href="https://linkedin.com/in/opop1omarr/" target="_blank" title="LinkedIn" class="text-gray-400 hover:text-blue-500 transition text-xl"><i class="fab fa-linkedin"></i></a>
-                <a href="https://www.kaggle.com/code/opop1omar/netflex-analysis" target="_blank" title="Kaggle" class="text-gray-400 hover:text-blue-400 transition text-xl"><i class="fab fa-kaggle"></i></a>
-                <a href="https://www.datacamp.com/portfolio/omarahmedmostafa2003" target="_blank" title="DataCamp" class="text-gray-400 hover:text-green-500 transition text-xl"><i class="fas fa-graduation-cap"></i></a>
+<!-- NAVBAR -->
+<nav class="fixed w-full z-50 glass-nav px-6">
+    <div class="max-w-7xl mx-auto flex justify-between items-center py-4">
+        <div class="text-xl font-extrabold tracking-widest">
+            OMAR<span class="text-purple-500">.</span>DE
+        </div>
+
+        <div class="flex items-center space-x-6">
+            <a href="https://github.com/Opop1omar4645545" target="_blank" title="GitHub" class="text-gray-400 hover:text-white text-xl">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://linkedin.com/in/opop1omarr/" target="_blank" title="LinkedIn" class="text-gray-400 hover:text-blue-500 text-xl">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://www.kaggle.com/code/opop1omar/netflex-analysis" target="_blank" title="Kaggle" class="text-gray-400 hover:text-blue-400 text-xl">
+                <i class="fab fa-kaggle"></i>
+            </a>
+            <a href="https://www.datacamp.com/portfolio/omarahmedmostafa2003" target="_blank" title="DataCamp Portfolio" class="text-gray-400 hover:text-green-500 text-xl">
+                <i class="fas fa-graduation-cap"></i>
+            </a>
+        </div>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="min-h-screen flex items-center justify-center relative px-6 pt-20">
+    <div class="hero-blob top-0 left-0"></div>
+
+    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+        <div data-aos="fade-right">
+            <p class="text-purple-400 font-mono tracking-widest mb-4">
+                AVAILABLE FOR WORK
+            </p>
+            <h1 class="text-7xl font-black leading-tight mb-6">
+                Omar <br><span class="text-purple-500">Ahmed.</span>
+            </h1>
+            <p class="text-gray-400 text-lg mb-8 leading-relaxed">
+                Data Engineer focused on building reliable data pipelines,
+                processing workflows, and analytical solutions using Python and SQL.<br>
+                <strong>GPA 3.56 / 4.0</strong> — Excellent with Honors, Helwan University.
+            </p>
+            <div class="flex gap-4">
+                <a href="mailto:omarahmedmostafa2003@gmail.com"
+                   class="bg-purple-600 hover:bg-purple-700 px-8 py-4 rounded-xl font-bold">
+                    Get In Touch
+                </a>
+                <a href="#projects"
+                   class="border border-gray-800 hover:bg-gray-800 px-8 py-4 rounded-xl font-bold">
+                    View Projects
+                </a>
             </div>
         </div>
-    </nav>
 
-    <section class="min-h-screen flex items-center justify-center relative px-6 pt-20">
-        <div class="hero-blob top-0 left-0"></div>
-        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
-            <div data-aos="fade-right">
-                <p class="text-purple-400 font-mono tracking-widest mb-4">AVAILABLE FOR WORK</p>
-                <h1 class="text-7xl font-black leading-tight mb-6">Omar <br><span class="text-purple-500">Ahmed.</span></h1>
-                <p class="text-gray-400 text-lg mb-8 leading-relaxed">
-                    Data Engineer specializing in building robust pipelines[cite: 8]. <br>
-                    <strong>GPA 3.56/4.0</strong> (Excellent with Honors) from Helwan University[cite: 11, 15].
+        <div class="relative group" data-aos="zoom-in">
+            <div class="absolute -inset-1 bg-purple-600 rounded-[3rem] blur opacity-25"></div>
+            <img src="Badla.jpg"
+                 alt="Omar Ahmed"
+                 class="relative w-full max-w-md h-[550px] object-cover rounded-[3rem] shadow-2xl grayscale hover:grayscale-0 transition">
+        </div>
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="py-24 px-6 bg-slate-900/20">
+    <div class="max-w-7xl mx-auto">
+        <h2 class="text-3xl font-bold mb-12 flex items-center gap-4">
+            <span class="text-purple-500">#</span> Skills
+        </h2>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="card-gradient p-6 rounded-2xl">
+                <h3 class="font-bold mb-4 text-purple-400">Programming</h3>
+                <p class="text-gray-400 text-sm">Python, SQL, C++, Bash</p>
+            </div>
+
+            <div class="card-gradient p-6 rounded-2xl">
+                <h3 class="font-bold mb-4 text-purple-400">Data & Analytics</h3>
+                <p class="text-gray-400 text-sm">
+                    Pandas, NumPy, Data Cleaning, Exploratory Data Analysis,
+                    Power BI, Data Visualization
                 </p>
-                <div class="flex gap-4">
-                    <a href="mailto:omarahmedmostafa2003@gmail.com" class="bg-purple-600 hover:bg-purple-700 px-8 py-4 rounded-xl font-bold transition">Get In Touch</a>
-                    <a href="#projects" class="border border-gray-800 hover:bg-gray-800 px-8 py-4 rounded-xl font-bold transition">View Projects</a>
-                </div>
             </div>
-            <div class="relative group" data-aos="zoom-in">
-                <div class="absolute -inset-1 bg-purple-600 rounded-[3rem] blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
-                <img src="Badla.jpg" alt="Omar Ahmed" class="relative w-full max-w-md h-[550px] object-cover rounded-[3rem] shadow-2xl grayscale hover:grayscale-0 transition duration-700">
-            </div>
-        </div>
-    </section>
 
-    <section id="achievements" class="py-24 px-6 bg-slate-900/20">
-        <div class="max-w-7xl mx-auto">
-            <h2 class="text-3xl font-bold mb-12 flex items-center gap-4">
-                <span class="text-purple-500">#</span> Achievements & Awards
-            </h2>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="card-gradient p-8 rounded-3xl" data-aos="fade-up">
-                    <div class="text-purple-500 text-3xl mb-4"><i class="fas fa-trophy"></i></div>
-                    <h3 class="text-xl font-bold mb-2">ECPC Finalist</h3>
-                    <p class="text-gray-400 text-sm">Qualified for ECPC 2024 (8th in Helwan) and ECPC 2025 (6th in Helwan)[cite: 48].</p>
-                    <a href="https://icpc.global/ICPCID/FTHGNNTTAJK7" target="_blank" class="mt-4 inline-block text-xs text-purple-400 hover:underline">View ICPC Profile</a>
-                </div>
-                <div class="card-gradient p-8 rounded-3xl" data-aos="fade-up" data-aos-delay="100">
-                    <div class="text-blue-500 text-3xl mb-4"><i class="fas fa-code"></i></div>
-                    <h3 class="text-xl font-bold mb-2">Codeforces Specialist</h3>
-                    <p class="text-gray-400 text-sm">Ranked Specialist on Codeforces with a focus on algorithms and data structures[cite: 50].</p>
-                </div>
-                <div class="card-gradient p-8 rounded-3xl" data-aos="fade-up" data-aos-delay="200">
-                    <div class="text-yellow-500 text-3xl mb-4"><i class="fas fa-medal"></i></div>
-                    <h3 class="text-xl font-bold mb-2">Gold Prize</h3>
-                    <p class="text-gray-400 text-sm">Won Gold Prize at MSP Hackathon 2023 for Problem Solving excellence[cite: 49].</p>
-                </div>
+            <div class="card-gradient p-6 rounded-2xl">
+                <h3 class="font-bold mb-4 text-purple-400">Databases & Tools</h3>
+                <p class="text-gray-400 text-sm">
+                    MongoDB, MySQL, Git, Linux, REST APIs
+                </p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section id="projects" class="py-32 px-6">
-        <div class="max-w-7xl mx-auto">
-            <h2 class="text-3xl font-bold mb-12 flex items-center gap-4">
-                <span class="text-purple-500">#</span> Projects Portfolio
-            </h2>
-            <div class="grid lg:grid-cols-2 gap-10">
-                <div class="card-gradient rounded-[2rem] overflow-hidden group" data-aos="fade-right">
-                    <div class="p-10">
-                        <div class="flex justify-between items-start mb-6">
-                            <h3 class="text-3xl font-bold">Posture Corrector Vest</h3>
-                            <a href="https://github.com/Opop1omar4645545/Posture-corrector-Vest-" target="_blank" class="text-2xl hover:text-purple-500"><i class="fab fa-github"></i></a>
-                        </div>
-                        <p class="text-gray-400 mb-8 leading-relaxed">Smart IoT data pipeline for real-time posture analysis[cite: 33, 34, 35]. Designed as a Graduation Project with structured results in MongoDB.</p>
-                        <div class="flex gap-3 text-xs font-mono">
-                            <span class="px-3 py-1 bg-purple-900/30 text-purple-400 rounded-full border border-purple-500/20 text-blue-400">IoT</span>
-                            <span class="px-3 py-1 bg-purple-900/30 text-purple-400 rounded-full border border-purple-500/20 text-blue-400">Python</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-gradient rounded-[2rem] overflow-hidden group" data-aos="fade-left">
-                    <div class="p-10">
-                        <div class="flex justify-between items-start mb-6">
-                            <h3 class="text-3xl font-bold">Netflix Content EDA</h3>
-                            <a href="https://www.kaggle.com/code/opop1omar/netflex-analysis" target="_blank" class="text-2xl hover:text-red-500"><i class="fab fa-kaggle"></i></a>
-                        </div>
-                        <p class="text-gray-400 mb-8 leading-relaxed">Comprehensive exploration of Netflix's library using Python, Seaborn, and Power BI[cite: 38, 39, 41].</p>
-                        <div class="flex gap-3 text-xs font-mono">
-                            <span class="px-3 py-1 bg-blue-900/30 text-blue-400 rounded-full border border-blue-500/20 text-blue-400">Pandas</span>
-                            <span class="px-3 py-1 bg-blue-900/30 text-blue-400 rounded-full border border-blue-500/20 text-blue-400">Visualization</span>
-                        </div>
-                    </div>
-                </div>
+<!-- ACHIEVEMENTS -->
+<section class="py-24 px-6">
+    <div class="max-w-7xl mx-auto">
+        <h2 class="text-3xl font-bold mb-12 flex items-center gap-4">
+            <span class="text-purple-500">#</span> Achievements
+        </h2>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="card-gradient p-8 rounded-3xl">
+                <h3 class="text-xl font-bold mb-2">ECPC Finalist</h3>
+                <p class="text-gray-400 text-sm">
+                    Qualified for ECPC 2024 (8th in Helwan) and ECPC 2025 (6th in Helwan).
+                </p>
+            </div>
+
+            <div class="card-gradient p-8 rounded-3xl">
+                <h3 class="text-xl font-bold mb-2">Codeforces Specialist</h3>
+                <p class="text-gray-400 text-sm">
+                    Specialist rank with strong focus on algorithms and data structures.
+                </p>
+            </div>
+
+            <div class="card-gradient p-8 rounded-3xl">
+                <h3 class="text-xl font-bold mb-2">Gold Prize Winner</h3>
+                <p class="text-gray-400 text-sm">
+                    Gold Prize at MSP Hackathon 2023 for problem-solving excellence.
+                </p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section id="experience" class="py-24 px-6 bg-slate-900/20">
-        <div class="max-w-4xl mx-auto">
-            <h2 class="text-center text-4xl font-bold mb-16">Work Journey</h2>
-            <div class="space-y-12">
-                <div class="relative pl-10 border-l border-gray-800" data-aos="fade-up">
-                    <div class="absolute -left-1.5 top-0 w-3 h-3 bg-purple-500 rounded-full"></div>
-                    <div class="flex justify-between mb-2">
-                        <h4 class="text-xl font-bold">AI Trainer</h4>
-                        <span class="text-gray-500 italic">Jul 2025 - Present [cite: 16]</span>
-                    </div>
-                    <p class="text-purple-400 mb-4">@ <a href="https://app.inv.tech/" class="hover:underline">Invisible Technologies</a> [cite: 13]</p>
-                    <p class="text-gray-400">Analyzing large-scale Arabic datasets to remediate linguistic errors and biases[cite: 17].</p>
-                </div>
-                <div class="relative pl-10 border-l border-gray-800" data-aos="fade-up">
-                    <div class="absolute -left-1.5 top-0 w-3 h-3 bg-purple-500 rounded-full"></div>
-                    <div class="flex justify-between mb-2">
-                        <h4 class="text-xl font-bold">Head of Community</h4>
-                        <span class="text-gray-500 italic">2023 - 2025 [cite: 25]</span>
-                    </div>
-                    <p class="text-purple-400 mb-4">@ <a href="https://www.facebook.com/icpchu/" class="hover:underline">Helwan ICPC Community</a> [cite: 24]</p>
-                    <p class="text-gray-400">Mentored 50+ students in algorithms and competitive programming[cite: 26].</p>
-                </div>
+<!-- PROJECTS -->
+<section id="projects" class="py-32 px-6">
+    <div class="max-w-7xl mx-auto">
+        <h2 class="text-3xl font-bold mb-12 flex items-center gap-4">
+            <span class="text-purple-500">#</span> Projects
+        </h2>
+
+        <div class="grid lg:grid-cols-2 gap-10">
+            <div class="card-gradient rounded-[2rem] p-10">
+                <h3 class="text-3xl font-bold mb-4">Posture Corrector Vest</h3>
+                <p class="text-gray-400 mb-6">
+                    Designed an end-to-end IoT data pipeline that collects sensor data,
+                    processes it using Python, and stores structured results in MongoDB
+                    for posture monitoring and analysis.
+                </p>
+                <a href="https://github.com/Opop1omar4645545/Posture-corrector-Vest-" target="_blank"
+                   class="text-purple-400 hover:underline">
+                    View on GitHub
+                </a>
+            </div>
+
+            <div class="card-gradient rounded-[2rem] p-10">
+                <h3 class="text-3xl font-bold mb-4">Netflix Content Analysis</h3>
+                <p class="text-gray-400 mb-6">
+                    Performed exploratory data analysis on Netflix content using Python,
+                    Pandas, and visualization tools to uncover trends in genres,
+                    ratings, and release patterns.
+                </p>
+                <a href="https://www.kaggle.com/code/opop1omar/netflex-analysis" target="_blank"
+                   class="text-purple-400 hover:underline">
+                    View on Kaggle
+                </a>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <footer class="py-20 border-t border-gray-900 text-center">
-        <div class="flex justify-center space-x-10 mb-10">
-            <a href="https://github.com/Opop1omar4645545" target="_blank" class="text-3xl text-gray-500 hover:text-white transition"><i class="fab fa-github"></i></a>
-            <a href="https://linkedin.com/in/opop1omarr/" target="_blank" class="text-3xl text-gray-500 hover:text-blue-500 transition"><i class="fab fa-linkedin"></i></a>
-            <a href="https://www.kaggle.com/code/opop1omar/netflex-analysis" target="_blank" class="text-3xl text-gray-500 hover:text-blue-400 transition"><i class="fab fa-kaggle"></i></a>
-        </div>
-        <p class="text-gray-500 text-sm font-mono tracking-widest uppercase">Omar Ahmed Mostafa | 2026</p>
-        <p class="text-gray-700 text-xs mt-2">Cairo, Egypt | +20 115 178 4181 [cite: 1, 3]</p>
-    </footer>
+<!-- FOOTER -->
+<footer class="py-20 border-t border-gray-900 text-center">
+    <p class="text-gray-500 text-sm font-mono uppercase">
+        Omar Ahmed Mostafa | 2026
+    </p>
+    <p class="text-gray-700 text-xs mt-2">
+        Cairo, Egypt | +20 115 178 4181
+    </p>
+</footer>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>AOS.init({ duration: 800, once: true });</script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({ duration: 800, once: true });
+</script>
+
 </body>
 </html>
