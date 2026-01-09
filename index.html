@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Omar Ahmed Mostafa | Data Engineer Portfolio</title>
+    <title>Omar Ahmed Mostafa | Data Engineer</title>
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -11,26 +11,30 @@
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap');
+
         body {
             font-family: 'Plus Jakarta Sans', sans-serif;
             background-color: #030712;
             color: white;
             scroll-behavior: smooth;
         }
+
         .glass-nav {
-            background: rgba(3, 7, 18, 0.8);
+            background: rgba(3, 7, 18, 0.85);
             backdrop-filter: blur(12px);
             border-bottom: 1px solid rgba(255,255,255,0.05);
         }
+
         .card-gradient {
-            background: linear-gradient(145deg, rgba(30, 41, 59, 0.4) 0%, rgba(15, 23, 42, 0.8) 100%);
-            border: 1px solid rgba(255,255,255,0.05);
+            background: linear-gradient(145deg, rgba(30, 41, 59, 0.45), rgba(15, 23, 42, 0.85));
+            border: 1px solid rgba(255,255,255,0.06);
         }
+
         .hero-blob {
             position: absolute;
-            width: 500px;
-            height: 500px;
-            background: radial-gradient(circle, rgba(139, 92, 246, 0.15) 0%, transparent 70%);
+            width: 420px;
+            height: 420px;
+            background: radial-gradient(circle, rgba(139,92,246,0.18) 0%, transparent 70%);
             z-index: -1;
         }
     </style>
@@ -46,16 +50,20 @@
         </div>
 
         <div class="flex items-center space-x-6">
-            <a href="https://github.com/Opop1omar4645545" target="_blank" title="GitHub" class="text-gray-400 hover:text-white text-xl">
+            <a href="https://github.com/Opop1omar4645545" target="_blank"
+               class="text-gray-300 hover:text-purple-400 transition duration-300 text-xl hover:scale-110">
                 <i class="fab fa-github"></i>
             </a>
-            <a href="https://linkedin.com/in/opop1omarr/" target="_blank" title="LinkedIn" class="text-gray-400 hover:text-blue-500 text-xl">
+            <a href="https://linkedin.com/in/opop1omarr/" target="_blank"
+               class="text-gray-300 hover:text-blue-500 transition duration-300 text-xl hover:scale-110">
                 <i class="fab fa-linkedin"></i>
             </a>
-            <a href="https://www.kaggle.com/code/opop1omar/netflex-analysis" target="_blank" title="Kaggle" class="text-gray-400 hover:text-blue-400 text-xl">
+            <a href="https://www.kaggle.com/code/opop1omar/netflex-analysis" target="_blank"
+               class="text-gray-300 hover:text-blue-400 transition duration-300 text-xl hover:scale-110">
                 <i class="fab fa-kaggle"></i>
             </a>
-            <a href="https://www.datacamp.com/portfolio/omarahmedmostafa2003" target="_blank" title="DataCamp Portfolio" class="text-gray-400 hover:text-green-500 text-xl">
+            <a href="https://www.datacamp.com/portfolio/omarahmedmostafa2003" target="_blank"
+               class="text-gray-300 hover:text-green-500 transition duration-300 text-xl hover:scale-110">
                 <i class="fas fa-graduation-cap"></i>
             </a>
         </div>
@@ -63,39 +71,44 @@
 </nav>
 
 <!-- HERO -->
-<section class="min-h-screen flex items-center justify-center relative px-6 pt-20">
-    <div class="hero-blob top-0 left-0"></div>
+<section class="min-h-screen flex items-center justify-center relative px-6 pt-24">
+    <div class="hero-blob top-10 left-10"></div>
 
     <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
         <div data-aos="fade-right">
             <p class="text-purple-400 font-mono tracking-widest mb-4">
                 AVAILABLE FOR WORK
             </p>
+
             <h1 class="text-7xl font-black leading-tight mb-6">
                 Omar <br><span class="text-purple-500">Ahmed.</span>
             </h1>
+
             <p class="text-gray-400 text-lg mb-8 leading-relaxed">
-                Data Engineer focused on building reliable data pipelines,
-                processing workflows, and analytical solutions using Python and SQL.<br>
+                Entry‑level Data Engineer with hands‑on experience in data pipelines,
+                ETL workflows, and data analysis using Python, SQL, and MongoDB.
+                Strong background in problem solving and algorithms.<br>
                 <strong>GPA 3.56 / 4.0</strong> — Excellent with Honors, Helwan University.
             </p>
+
             <div class="flex gap-4">
                 <a href="mailto:omarahmedmostafa2003@gmail.com"
-                   class="bg-purple-600 hover:bg-purple-700 px-8 py-4 rounded-xl font-bold">
+                   class="bg-purple-600 hover:bg-purple-700 px-8 py-4 rounded-xl font-bold transition">
                     Get In Touch
                 </a>
                 <a href="#projects"
-                   class="border border-gray-800 hover:bg-gray-800 px-8 py-4 rounded-xl font-bold">
+                   class="border border-gray-800 hover:bg-gray-800 px-8 py-4 rounded-xl font-bold transition">
                     View Projects
                 </a>
             </div>
         </div>
 
         <div class="relative group" data-aos="zoom-in">
-            <div class="absolute -inset-1 bg-purple-600 rounded-[3rem] blur opacity-25"></div>
+            <div class="absolute -inset-1 bg-purple-600 rounded-[2.5rem] blur opacity-25"></div>
             <img src="Badla.jpg"
                  alt="Omar Ahmed"
-                 class="relative w-full max-w-md h-[550px] object-cover rounded-[3rem] shadow-2xl grayscale hover:grayscale-0 transition">
+                 class="relative w-full max-w-md aspect-[4/5] object-cover object-center
+                        rounded-[2.5rem] shadow-2xl grayscale hover:grayscale-0 transition duration-700">
         </div>
     </div>
 </section>
@@ -104,60 +117,46 @@
 <section id="skills" class="py-24 px-6 bg-slate-900/20">
     <div class="max-w-7xl mx-auto">
         <h2 class="text-3xl font-bold mb-12 flex items-center gap-4">
-            <span class="text-purple-500">#</span> Skills
+            <span class="text-purple-500">#</span> Data Engineering Skills
         </h2>
 
-        <div class="grid md:grid-cols-3 gap-8">
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div class="card-gradient p-6 rounded-2xl">
-                <h3 class="font-bold mb-4 text-purple-400">Programming</h3>
-                <p class="text-gray-400 text-sm">Python, SQL, C++, Bash</p>
-            </div>
-
-            <div class="card-gradient p-6 rounded-2xl">
-                <h3 class="font-bold mb-4 text-purple-400">Data & Analytics</h3>
-                <p class="text-gray-400 text-sm">
-                    Pandas, NumPy, Data Cleaning, Exploratory Data Analysis,
-                    Power BI, Data Visualization
-                </p>
+                <h3 class="font-bold mb-4 text-purple-400">Languages</h3>
+                <ul class="text-gray-400 text-sm space-y-1">
+                    <li>Python</li>
+                    <li>SQL</li>
+                    <li>C++</li>
+                </ul>
             </div>
 
             <div class="card-gradient p-6 rounded-2xl">
-                <h3 class="font-bold mb-4 text-purple-400">Databases & Tools</h3>
-                <p class="text-gray-400 text-sm">
-                    MongoDB, MySQL, Git, Linux, REST APIs
-                </p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- ACHIEVEMENTS -->
-<section class="py-24 px-6">
-    <div class="max-w-7xl mx-auto">
-        <h2 class="text-3xl font-bold mb-12 flex items-center gap-4">
-            <span class="text-purple-500">#</span> Achievements
-        </h2>
-
-        <div class="grid md:grid-cols-3 gap-8">
-            <div class="card-gradient p-8 rounded-3xl">
-                <h3 class="text-xl font-bold mb-2">ECPC Finalist</h3>
-                <p class="text-gray-400 text-sm">
-                    Qualified for ECPC 2024 (8th in Helwan) and ECPC 2025 (6th in Helwan).
-                </p>
+                <h3 class="font-bold mb-4 text-purple-400">Data Pipelines</h3>
+                <ul class="text-gray-400 text-sm space-y-1">
+                    <li>ETL Design</li>
+                    <li>Data Cleaning</li>
+                    <li>Transformation</li>
+                    <li>API Ingestion</li>
+                </ul>
             </div>
 
-            <div class="card-gradient p-8 rounded-3xl">
-                <h3 class="text-xl font-bold mb-2">Codeforces Specialist</h3>
-                <p class="text-gray-400 text-sm">
-                    Specialist rank with strong focus on algorithms and data structures.
-                </p>
+            <div class="card-gradient p-6 rounded-2xl">
+                <h3 class="font-bold mb-4 text-purple-400">Databases</h3>
+                <ul class="text-gray-400 text-sm space-y-1">
+                    <li>MongoDB</li>
+                    <li>MySQL</li>
+                    <li>Schema Design</li>
+                </ul>
             </div>
 
-            <div class="card-gradient p-8 rounded-3xl">
-                <h3 class="text-xl font-bold mb-2">Gold Prize Winner</h3>
-                <p class="text-gray-400 text-sm">
-                    Gold Prize at MSP Hackathon 2023 for problem-solving excellence.
-                </p>
+            <div class="card-gradient p-6 rounded-2xl">
+                <h3 class="font-bold mb-4 text-purple-400">Tools</h3>
+                <ul class="text-gray-400 text-sm space-y-1">
+                    <li>Git & GitHub</li>
+                    <li>Linux</li>
+                    <li>Power BI</li>
+                    <li>Pandas & NumPy</li>
+                </ul>
             </div>
         </div>
     </div>
@@ -167,33 +166,33 @@
 <section id="projects" class="py-32 px-6">
     <div class="max-w-7xl mx-auto">
         <h2 class="text-3xl font-bold mb-12 flex items-center gap-4">
-            <span class="text-purple-500">#</span> Projects
+            <span class="text-purple-500">#</span> Data Engineering Projects
         </h2>
 
         <div class="grid lg:grid-cols-2 gap-10">
-            <div class="card-gradient rounded-[2rem] p-10">
+            <div class="card-gradient p-10 rounded-[2rem]">
                 <h3 class="text-3xl font-bold mb-4">Posture Corrector Vest</h3>
                 <p class="text-gray-400 mb-6">
-                    Designed an end-to-end IoT data pipeline that collects sensor data,
-                    processes it using Python, and stores structured results in MongoDB
-                    for posture monitoring and analysis.
+                    Built an IoT data pipeline that collects sensor readings,
+                    processes and cleans data using Python, and stores structured
+                    results in MongoDB for posture monitoring and reporting.
                 </p>
                 <a href="https://github.com/Opop1omar4645545/Posture-corrector-Vest-" target="_blank"
                    class="text-purple-400 hover:underline">
-                    View on GitHub
+                    View on GitHub →
                 </a>
             </div>
 
-            <div class="card-gradient rounded-[2rem] p-10">
+            <div class="card-gradient p-10 rounded-[2rem]">
                 <h3 class="text-3xl font-bold mb-4">Netflix Content Analysis</h3>
                 <p class="text-gray-400 mb-6">
-                    Performed exploratory data analysis on Netflix content using Python,
-                    Pandas, and visualization tools to uncover trends in genres,
-                    ratings, and release patterns.
+                    Designed a data analysis workflow using Python and Pandas
+                    to clean, transform, and analyze Netflix content data,
+                    producing insights through visual dashboards.
                 </p>
                 <a href="https://www.kaggle.com/code/opop1omar/netflex-analysis" target="_blank"
                    class="text-purple-400 hover:underline">
-                    View on Kaggle
+                    View on Kaggle →
                 </a>
             </div>
         </div>
