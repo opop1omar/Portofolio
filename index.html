@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Omar Ahmed Mostafa | Data Engineer</title>
+    <title>Omar Ahmed Mostafa | Data Engineer Portfolio</title>
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -11,31 +11,65 @@
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap');
-
         body {
             font-family: 'Plus Jakarta Sans', sans-serif;
             background-color: #030712;
             color: white;
             scroll-behavior: smooth;
         }
-
         .glass-nav {
-            background: rgba(3, 7, 18, 0.85);
+            background: rgba(3, 7, 18, 0.95);
             backdrop-filter: blur(12px);
-            border-bottom: 1px solid rgba(255,255,255,0.05);
+            border-bottom: 1px solid rgba(100, 100, 255, 0.1);
         }
-
         .card-gradient {
-            background: linear-gradient(145deg, rgba(30, 41, 59, 0.45), rgba(15, 23, 42, 0.85));
-            border: 1px solid rgba(255,255,255,0.06);
+            background: linear-gradient(145deg, rgba(30, 41, 59, 0.4) 0%, rgba(15, 23, 42, 0.8) 100%);
+            border: 1px solid rgba(100, 100, 255, 0.08);
+            transition: all 0.3s ease;
         }
-
+        .card-gradient:hover {
+            border-color: rgba(139, 92, 246, 0.3);
+            transform: translateY(-5px);
+        }
         .hero-blob {
             position: absolute;
-            width: 420px;
-            height: 420px;
-            background: radial-gradient(circle, rgba(139,92,246,0.18) 0%, transparent 70%);
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(139, 92, 246, 0.15) 0%, transparent 70%);
             z-index: -1;
+        }
+        .nav-icon {
+            transition: all 0.3s ease;
+            padding: 8px;
+            border-radius: 8px;
+        }
+        .nav-icon:hover {
+            background-color: rgba(139, 92, 246, 0.2);
+            transform: scale(1.1);
+        }
+        .skill-tag {
+            display: inline-block;
+            background: rgba(139, 92, 246, 0.15);
+            padding: 6px 14px;
+            border-radius: 20px;
+            margin: 4px;
+            font-size: 0.85rem;
+            border: 1px solid rgba(139, 92, 246, 0.3);
+        }
+        .profile-img-container {
+            border-radius: 3rem;
+            overflow: hidden;
+            position: relative;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+        }
+        .profile-img {
+            width: 100%;
+            height: 550px;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        .profile-img-container:hover .profile-img {
+            transform: scale(1.03);
         }
     </style>
 </head>
@@ -46,117 +80,186 @@
 <nav class="fixed w-full z-50 glass-nav px-6">
     <div class="max-w-7xl mx-auto flex justify-between items-center py-4">
         <div class="text-xl font-extrabold tracking-widest">
-            OMAR<span class="text-purple-500">.</span>DE
+            <span class="text-white">OMAR</span><span class="text-purple-500">DE</span>
         </div>
 
-        <div class="flex items-center space-x-6">
-            <a href="https://github.com/Opop1omar4645545" target="_blank"
-               class="text-gray-300 hover:text-purple-400 transition duration-300 text-xl hover:scale-110">
+        <div class="flex items-center space-x-4">
+            <a href="https://github.com/Opop1omar4645545" target="_blank" title="GitHub" class="nav-icon text-gray-300 hover:text-white text-xl">
                 <i class="fab fa-github"></i>
             </a>
-            <a href="https://linkedin.com/in/opop1omarr/" target="_blank"
-               class="text-gray-300 hover:text-blue-500 transition duration-300 text-xl hover:scale-110">
+            <a href="https://linkedin.com/in/opop1omarr/" target="_blank" title="LinkedIn" class="nav-icon text-gray-300 hover:text-blue-400 text-xl">
                 <i class="fab fa-linkedin"></i>
             </a>
-            <a href="https://www.kaggle.com/code/opop1omar/netflex-analysis" target="_blank"
-               class="text-gray-300 hover:text-blue-400 transition duration-300 text-xl hover:scale-110">
+            <a href="https://www.kaggle.com/code/opop1omar/netflex-analysis" target="_blank" title="Kaggle" class="nav-icon text-gray-300 hover:text-blue-300 text-xl">
                 <i class="fab fa-kaggle"></i>
             </a>
-            <a href="https://www.datacamp.com/portfolio/omarahmedmostafa2003" target="_blank"
-               class="text-gray-300 hover:text-green-500 transition duration-300 text-xl hover:scale-110">
+            <a href="https://www.datacamp.com/portfolio/omarahmedmostafa2003" target="_blank" title="DataCamp Portfolio" class="nav-icon text-gray-300 hover:text-green-400 text-xl">
                 <i class="fas fa-graduation-cap"></i>
+            </a>
+            <a href="#contact" class="nav-icon text-gray-300 hover:text-purple-400 text-xl">
+                <i class="fas fa-envelope"></i>
             </a>
         </div>
     </div>
 </nav>
 
 <!-- HERO -->
-<section class="min-h-screen flex items-center justify-center relative px-6 pt-24">
-    <div class="hero-blob top-10 left-10"></div>
+<section class="min-h-screen flex items-center justify-center relative px-6 pt-20">
+    <div class="hero-blob top-0 left-0"></div>
 
     <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
         <div data-aos="fade-right">
             <p class="text-purple-400 font-mono tracking-widest mb-4">
-                AVAILABLE FOR WORK
+                <i class="fas fa-bolt mr-2"></i> AVAILABLE FOR WORK
             </p>
-
             <h1 class="text-7xl font-black leading-tight mb-6">
                 Omar <br><span class="text-purple-500">Ahmed.</span>
             </h1>
-
-            <p class="text-gray-400 text-lg mb-8 leading-relaxed">
-                Entry‑level Data Engineer with hands‑on experience in data pipelines,
-                ETL workflows, and data analysis using Python, SQL, and MongoDB.
-                Strong background in problem solving and algorithms.<br>
-                <strong>GPA 3.56 / 4.0</strong> — Excellent with Honors, Helwan University.
+            <p class="text-gray-300 text-lg mb-8 leading-relaxed">
+                Data Engineer specializing in designing and building scalable data pipelines, 
+                ETL/ELT workflows, and data infrastructure using Python, SQL, and cloud technologies.
+                <br><br>
+                <strong class="text-purple-300">GPA 3.56 / 4.0</strong> — Excellent with Honors, Helwan University.
             </p>
-
-            <div class="flex gap-4">
+            <div class="flex gap-4 flex-wrap">
                 <a href="mailto:omarahmedmostafa2003@gmail.com"
-                   class="bg-purple-600 hover:bg-purple-700 px-8 py-4 rounded-xl font-bold transition">
-                    Get In Touch
+                   class="bg-gradient-to-r from-purple-600 to-indigo-700 hover:from-purple-700 hover:to-indigo-800 px-8 py-4 rounded-xl font-bold shadow-lg">
+                    <i class="fas fa-paper-plane mr-2"></i> Get In Touch
                 </a>
                 <a href="#projects"
-                   class="border border-gray-800 hover:bg-gray-800 px-8 py-4 rounded-xl font-bold transition">
-                    View Projects
+                   class="border border-gray-800 hover:bg-gray-800 px-8 py-4 rounded-xl font-bold">
+                    <i class="fas fa-code-branch mr-2"></i> View Projects
+                </a>
+                <a href="#achievements"
+                   class="border border-gray-800 hover:bg-gray-800 px-8 py-4 rounded-xl font-bold">
+                    <i class="fas fa-trophy mr-2"></i> Achievements
                 </a>
             </div>
         </div>
 
         <div class="relative group" data-aos="zoom-in">
-            <div class="absolute -inset-1 bg-purple-600 rounded-[2.5rem] blur opacity-25"></div>
-            <img src="Badla.jpg"
-                 alt="Omar Ahmed"
-                 class="relative w-full max-w-md aspect-[4/5] object-cover object-center
-                        rounded-[2.5rem] shadow-2xl grayscale hover:grayscale-0 transition duration-700">
+            <div class="absolute -inset-1 bg-gradient-to-r from-purple-600 to-indigo-600 rounded-[3rem] blur opacity-25 group-hover:opacity-40 transition duration-500"></div>
+            <div class="profile-img-container">
+                <!-- Replace with your actual image path -->
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80"
+                     alt="Omar Ahmed - Data Engineer"
+                     class="profile-img">
+            </div>
         </div>
     </div>
 </section>
 
-<!-- SKILLS -->
+<!-- SKILLS - IMPROVED -->
 <section id="skills" class="py-24 px-6 bg-slate-900/20">
     <div class="max-w-7xl mx-auto">
         <h2 class="text-3xl font-bold mb-12 flex items-center gap-4">
             <span class="text-purple-500">#</span> Data Engineering Skills
         </h2>
 
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="card-gradient p-8 rounded-2xl">
+                <h3 class="font-bold mb-6 text-purple-400 text-xl">
+                    <i class="fas fa-database mr-2"></i> Data Engineering Core
+                </h3>
+                <div class="mb-4">
+                    <span class="skill-tag">ETL/ELT Pipelines</span>
+                    <span class="skill-tag">Data Warehousing</span>
+                    <span class="skill-tag">Data Modeling</span>
+                    <span class="skill-tag">Workflow Orchestration</span>
+                    <span class="skill-tag">Data Quality</span>
+                    <span class="skill-tag">Monitoring & Logging</span>
+                </div>
+                <p class="text-gray-400 text-sm mt-4">
+                    Building robust, scalable data pipelines and infrastructure for reliable data processing.
+                </p>
+            </div>
+
+            <div class="card-gradient p-8 rounded-2xl">
+                <h3 class="font-bold mb-6 text-purple-400 text-xl">
+                    <i class="fas fa-code mr-2"></i> Programming & Tools
+                </h3>
+                <div class="mb-4">
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">SQL</span>
+                    <span class="skill-tag">Apache Spark</span>
+                    <span class="skill-tag">Pandas</span>
+                    <span class="skill-tag">Git</span>
+                    <span class="skill-tag">Linux/Bash</span>
+                    <span class="skill-tag">Docker</span>
+                    <span class="skill-tag">REST APIs</span>
+                </div>
+                <p class="text-gray-400 text-sm mt-4">
+                    Proficient in data engineering toolkits and programming for data processing and automation.
+                </p>
+            </div>
+
+            <div class="card-gradient p-8 rounded-2xl">
+                <h3 class="font-bold mb-6 text-purple-400 text-xl">
+                    <i class="fas fa-server mr-2"></i> Databases & Analytics
+                </h3>
+                <div class="mb-4">
+                    <span class="skill-tag">PostgreSQL</span>
+                    <span class="skill-tag">MySQL</span>
+                    <span class="skill-tag">MongoDB</span>
+                    <span class="skill-tag">Power BI</span>
+                    <span class="skill-tag">Data Visualization</span>
+                    <span class="skill-tag">Exploratory Analysis</span>
+                </div>
+                <p class="text-gray-400 text-sm mt-4">
+                    Expertise in database systems and analytical tools for data storage, processing, and visualization.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ACHIEVEMENTS - UPDATED -->
+<section id="achievements" class="py-24 px-6">
+    <div class="max-w-7xl mx-auto">
+        <h2 class="text-3xl font-bold mb-12 flex items-center gap-4">
+            <span class="text-purple-500">#</span> Achievements
+        </h2>
+
         <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div class="card-gradient p-6 rounded-2xl">
-                <h3 class="font-bold mb-4 text-purple-400">Languages</h3>
-                <ul class="text-gray-400 text-sm space-y-1">
-                    <li>Python</li>
-                    <li>SQL</li>
-                    <li>C++</li>
-                </ul>
+            <div class="card-gradient p-8 rounded-3xl">
+                <div class="text-purple-400 text-2xl mb-4">
+                    <i class="fas fa-code"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-2">ECPC Finalist</h3>
+                <p class="text-gray-400 text-sm mb-2">
+                    Qualified for ECPC 2024 (8th in Helwan) and ECPC 2025 (6th in Helwan).
+                </p>
+                <p class="text-purple-300 text-xs font-mono">ICPC ID: [Your ICPC ID Here]</p>
             </div>
 
-            <div class="card-gradient p-6 rounded-2xl">
-                <h3 class="font-bold mb-4 text-purple-400">Data Pipelines</h3>
-                <ul class="text-gray-400 text-sm space-y-1">
-                    <li>ETL Design</li>
-                    <li>Data Cleaning</li>
-                    <li>Transformation</li>
-                    <li>API Ingestion</li>
-                </ul>
+            <div class="card-gradient p-8 rounded-3xl">
+                <div class="text-yellow-500 text-2xl mb-4">
+                    <i class="fas fa-trophy"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-2">Gold Prize Winner</h3>
+                <p class="text-gray-400 text-sm">
+                    Gold Prize at MSP Hackathon 2023 for problem-solving excellence and innovative solution development.
+                </p>
             </div>
 
-            <div class="card-gradient p-6 rounded-2xl">
-                <h3 class="font-bold mb-4 text-purple-400">Databases</h3>
-                <ul class="text-gray-400 text-sm space-y-1">
-                    <li>MongoDB</li>
-                    <li>MySQL</li>
-                    <li>Schema Design</li>
-                </ul>
+            <div class="card-gradient p-8 rounded-3xl">
+                <div class="text-blue-400 text-2xl mb-4">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-2">DataCamp Certified</h3>
+                <p class="text-gray-400 text-sm">
+                    Data Engineer certification with proficiency in data pipelines, ETL processes, and data infrastructure.
+                </p>
             </div>
 
-            <div class="card-gradient p-6 rounded-2xl">
-                <h3 class="font-bold mb-4 text-purple-400">Tools</h3>
-                <ul class="text-gray-400 text-sm space-y-1">
-                    <li>Git & GitHub</li>
-                    <li>Linux</li>
-                    <li>Power BI</li>
-                    <li>Pandas & NumPy</li>
-                </ul>
+            <div class="card-gradient p-8 rounded-3xl">
+                <div class="text-green-400 text-2xl mb-4">
+                    <i class="fas fa-star"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-2">Codeforces Specialist</h3>
+                <p class="text-gray-400 text-sm">
+                    Specialist rank with strong focus on algorithms, data structures, and computational problem-solving.
+                </p>
             </div>
         </div>
     </div>
@@ -170,48 +273,93 @@
         </h2>
 
         <div class="grid lg:grid-cols-2 gap-10">
-            <div class="card-gradient p-10 rounded-[2rem]">
-                <h3 class="text-3xl font-bold mb-4">Posture Corrector Vest</h3>
+            <div class="card-gradient rounded-[2rem] p-10">
+                <div class="flex justify-between items-start mb-4">
+                    <h3 class="text-3xl font-bold">Posture Corrector Vest</h3>
+                    <span class="bg-purple-900/50 text-purple-300 text-xs font-bold px-3 py-1 rounded-full">IoT Data Pipeline</span>
+                </div>
                 <p class="text-gray-400 mb-6">
-                    Built an IoT data pipeline that collects sensor readings,
-                    processes and cleans data using Python, and stores structured
-                    results in MongoDB for posture monitoring and reporting.
+                    Designed an end-to-end IoT data pipeline that collects real-time sensor data,
+                    processes it using Python and Pandas, implements data quality checks,
+                    and stores structured results in MongoDB for posture monitoring and analysis.
                 </p>
-                <a href="https://github.com/Opop1omar4645545/Posture-corrector-Vest-" target="_blank"
-                   class="text-purple-400 hover:underline">
-                    View on GitHub →
-                </a>
+                <div class="flex justify-between items-center">
+                    <a href="https://github.com/Opop1omar4645545/Posture-corrector-Vest-" target="_blank"
+                       class="text-purple-400 hover:text-purple-300 hover:underline flex items-center">
+                        <i class="fab fa-github mr-2"></i> View on GitHub
+                    </a>
+                    <div class="text-xs text-gray-500">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">Data Pipeline</span>
+                    </div>
+                </div>
             </div>
 
-            <div class="card-gradient p-10 rounded-[2rem]">
-                <h3 class="text-3xl font-bold mb-4">Netflix Content Analysis</h3>
+            <div class="card-gradient rounded-[2rem] p-10">
+                <div class="flex justify-between items-start mb-4">
+                    <h3 class="text-3xl font-bold">Netflix Content Analysis</h3>
+                    <span class="bg-blue-900/50 text-blue-300 text-xs font-bold px-3 py-1 rounded-full">Data Analytics</span>
+                </div>
                 <p class="text-gray-400 mb-6">
-                    Designed a data analysis workflow using Python and Pandas
-                    to clean, transform, and analyze Netflix content data,
-                    producing insights through visual dashboards.
+                    Performed comprehensive exploratory data analysis on Netflix content using Python,
+                    Pandas, and visualization tools to uncover trends in genres, ratings, release patterns,
+                    and content strategy insights with actionable business recommendations.
                 </p>
-                <a href="https://www.kaggle.com/code/opop1omar/netflex-analysis" target="_blank"
-                   class="text-purple-400 hover:underline">
-                    View on Kaggle →
-                </a>
+                <div class="flex justify-between items-center">
+                    <a href="https://www.kaggle.com/code/opop1omar/netflex-analysis" target="_blank"
+                       class="text-purple-400 hover:text-purple-300 hover:underline flex items-center">
+                        <i class="fab fa-kaggle mr-2"></i> View on Kaggle
+                    </a>
+                    <div class="text-xs text-gray-500">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Pandas</span>
+                        <span class="skill-tag">Data Visualization</span>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </section>
 
 <!-- FOOTER -->
-<footer class="py-20 border-t border-gray-900 text-center">
-    <p class="text-gray-500 text-sm font-mono uppercase">
-        Omar Ahmed Mostafa | 2026
-    </p>
-    <p class="text-gray-700 text-xs mt-2">
-        Cairo, Egypt | +20 115 178 4181
-    </p>
+<footer id="contact" class="py-20 border-t border-gray-900 text-center">
+    <div class="max-w-7xl mx-auto px-6">
+        <h3 class="text-2xl font-bold mb-8">Let's Build Data Solutions Together</h3>
+        
+        <div class="flex justify-center space-x-8 mb-12">
+            <a href="mailto:omarahmedmostafa2003@gmail.com" 
+               class="text-gray-400 hover:text-white text-lg flex items-center">
+               <i class="fas fa-envelope mr-2"></i> omarahmedmostafa2003@gmail.com
+            </a>
+            <a href="tel:+201151784181" 
+               class="text-gray-400 hover:text-white text-lg flex items-center">
+               <i class="fas fa-phone mr-2"></i> +20 115 178 4181
+            </a>
+        </div>
+        
+        <p class="text-gray-500 text-sm font-mono uppercase">
+            Omar Ahmed Mostafa | Data Engineer Portfolio | 2026
+        </p>
+        <p class="text-gray-700 text-xs mt-2">
+            Cairo, Egypt | Available for Data Engineering Roles
+        </p>
+    </div>
 </footer>
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
     AOS.init({ duration: 800, once: true });
+    
+    // Highlight active nav icon on hover
+    document.querySelectorAll('.nav-icon').forEach(icon => {
+        icon.addEventListener('mouseenter', function() {
+            this.style.color = getComputedStyle(this).getPropertyValue('--hover-color') || '#8b5cf6';
+        });
+        icon.addEventListener('mouseleave', function() {
+            this.style.color = '';
+        });
+    });
 </script>
 
 </body>
